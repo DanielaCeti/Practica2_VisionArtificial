@@ -258,5 +258,4 @@ etiqueta_titular.place(x=600, y=20)
 resultadoImagen = Label(raiz,text="Resultado")
 resultadoImagen.place(x=400,y=50)
 keyboard.on_press_key("d", lambda _:operaciones())
-
 raiz.mainloop() 
