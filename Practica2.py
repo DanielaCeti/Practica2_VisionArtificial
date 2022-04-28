@@ -24,7 +24,28 @@ def operaciones():
     #print("-------------------")
     global opc
 
-
+    opc = opc+1
+    print("Presionaste la p contador:",opc)
+    if opc == 1:
+        etiqueta_titular.configure(text="Suma por metodo de Open CV add")
+        image=cv2.add(img1,img2)
+        image = imutils.resize(image,height=350)
+        image = cv2.cvtColor(image,cv2.COLOR_BGR2RGB)
+        #print(image)
+        im=PIL.Image.fromarray(image,'RGB')
+        img3r=ImageTk.PhotoImage(image=im)
+        resultadoImagen.config(image=img3r)
+        resultadoImagen.image = img3r
+    if opc == 2:
+        etiqueta_titular.configure(text="Suma por metodo de Open CV addWeighted")
+        image=cv2.addWeighted(img1,0.7,img2,0.3,0)
+        image = imutils.resize(image,height=350)
+        image = cv2.cvtColor(image,cv2.COLOR_BGR2RGB)
+        #print(image)
+        im=PIL.Image.fromarray(image,'RGB')
+        img3r=ImageTk.PhotoImage(image=im)
+        resultadoImagen.config(image=img3r)
+        resultadoImagen.image = img3r
 
     
 raiz = Tk()
