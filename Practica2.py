@@ -9,7 +9,7 @@ from tkinter import *
 from tkinter import ttk
 import imutils
 import keyboard
-import math as ma
+
 
 opc=0
 #image = Non
@@ -248,10 +248,10 @@ raiz.title("Operaciones de imagenes") #Cambiar el nombre de la ventana
 raiz.geometry("1200x480") #Configurar tamaño
 raiz.resizable(0,0)
 etiqueta_titular = ttk.Label(text="Operaciones de imagenes")
-img1vi=PhotoImage(file="badbunny.jpg")
+img1vi=PhotoImage(file="badbunny.png")
 widget=Label(raiz,text="Imagen 1",image=img1vi)
 widget.place(x=50,y=50)
-img2vi=PhotoImage(file="danielricciardo.jpg")
+img2vi=PhotoImage(file="danielricciardo.png")
 widget2=Label(raiz,text="imagen 2",image=img2vi)
 widget2.place(x=850,y=50)
 etiqueta_titular.place(x=600, y=20)
