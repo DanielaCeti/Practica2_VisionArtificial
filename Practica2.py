@@ -16,8 +16,8 @@ opc=0
 
 def operaciones():
     
-    img1 = cv2.imread('badbunny.jpg')
-    img2 = cv2.imread('danielricciardo.jpg')
+    img1 = cv2.imread('badbunny.png')
+    img2 = cv2.imread('danielricciardo.png')
     global opc #variable global para el control de menus
 
     opc = opc+1
